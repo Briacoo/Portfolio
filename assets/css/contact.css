@@ -1,0 +1,77 @@
+*{
+    text-decoration: none;
+}
+
+:root{
+/*==========VAR COLORS==========*/
+    --background-color: #030316;
+    --title-color: #78C19C;
+    --title-color-hover: #B9DCC4;
+    --title-color-white: #FFF4E5;
+    --hightlight: #E15139;
+
+        /* FIN VAR COLORS*/
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Neue Kabel', sans-serif;
+    margin: 10px;
+    background-color: var(--background-color);
+    background-image: url(../img/grille2.png);
+    background-repeat:repeat;
+    background-size: 130%;
+}
+
+/*========== NAVIGATION ==========*/
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+}
+
+h1 {
+    font-size: 40px;
+            
+}
+
+.img, .a-logo {
+    width: 330px;
+    max-width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+nav a {
+    font-weight: bold;
+    color: var(--title-color);
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 25px;
+    font-family: 'Neue Kabel', sans-serif;
+    text-align: right;
+    margin-right: 16px;
+}
+
+nav a:hover {
+    color: var(--title-color-hover);
+    transition: .5s ease;
+}
+
+.highlight {
+    color: var(--hightlight);
+}
+
+        /* FIN NAVIGATION */

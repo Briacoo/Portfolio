@@ -1,0 +1,269 @@
+*{
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Neue Kabel', sans-serif;
+    margin: 10px;
+    background-color: #030316;
+    background-image: url(../img/grille2.png);
+    background-repeat:repeat;
+    background-size: 130%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 0fr 2fr 2fr 2fr 0fr;
+    grid-column-gap: 30px;
+}
+
+
+h1 {
+    font-size: 40px;
+
+}
+
+.img, .a-logo {
+    width: 330px;
+    max-width: 100%;
+}
+
+
+nav a {
+    font-weight: bold;
+    color: #78C19C;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.highlight {
+    font-weight: 900;
+    color: #E15139;
+}
+
+.header-title {
+    display: flex;
+}
+
+.header {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+
+#logo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.header-nav a {
+    font-size: 25px;
+    font-family: 'Neue Kabel', sans-serif;
+    text-align: right;
+    margin-right: 16px;
+}
+
+.header-nav a:hover,
+.header-title a:hover,
+.lien:hover {
+    color: #B9DCC4;
+    transition: .5s ease;
+}
+
+.left {
+    grid-column: 2 / 3;
+}
+
+.center {
+    grid-column: 3 / 4;
+}
+
+.right {
+    grid-column: 4 / 5;
+}
+
+.threecolumns {
+    grid-column: 2 / 5;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    margin-top: 34px;
+    border-radius: 25px;
+}
+
+.video {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    margin-top: 34px;
+}
+
+
+/*=====Works=====*/
+
+.works {
+    display: grid;
+    grid-template-columns: 1fr 2fr ;
+    grid-column-gap: 30px;
+}
+
+div .Titre-works{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 25px;
+}
+
+div .Titre-works a{
+    color: #FFF4E5;
+}
+
+
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.container>a img {
+    transition: 0.3s;
+    display: grid;
+}
+
+.container>a:hover img {
+    opacity: 0.4;
+}
+
+.a-img-txt {
+    display: grid;
+}
+
+.a-img-txt>* {
+    grid-area: 1/1/-1/-1;
+}
+
+.a-txt {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    color: #78C19C;
+    opacity: 0;
+    transition: opacity .3s;
+    font-size: 25px;
+    font-family: 'Neue Kabel', sans-serif;
+    font-weight: bold;
+}
+
+.a-txt:hover {
+    opacity: 1;
+    z-index: 1;
+}
+/*=====Fin Works=====*/
+
+
+/*============= STAGES ===============*/
+
+/*------- MISMO -------*/
+
+.mismo_title{
+    color: #30509f;
+}
+
+.mismo_next{
+    color: #78C19C;
+}
+
+.mismo_intune{
+    color: #E15139;
+    margin-top: 50px;
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-family: 'Neue Kabel', sans-serif;
+    font-weight: bold;
+}
+
+.img_mismo1{
+    margin-bottom: 100px;
+}
+
+.titreprojets {
+    margin-top: 50px;
+    color: #FFF4E5;
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-family: 'Neue Kabel', sans-serif;
+    font-weight: bold;
+
+}
+
+.articleprojets {
+    display: block;
+    margin-left: 60px;
+    color: #FFF4E5;
+    max-width: 100%;
+    font-size: 20px;
+}
+
+.articleprojets,
+.titreprojets {
+    padding-right: 100px;
+    position: sticky;
+}
+
+.projet {
+    grid-column: 2 / 4;
+    margin-right: 60px;
+}
+
+/*about*/
+
+.categorie {
+
+    margin-left: 40px;
+    margin-right: 48px;
+    border-bottom: 10px black;
+}
+
+.img-cat {
+    margin-left: 50px;
+    margin-top: 0px;
+    grid-column: 1 / 2;
+    max-width: 550px;
+}
+
+.lieu {
+    font-size: 50px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-left: 0px;
+    font-weight: bold;
+    font-family: 'Neue Kabel', sans-serif;
+    
+    
+}
+
+.infos {
+    grid-column: 2 / 4;
+    margin-left: 40px;
+    margin-top: 0px;
+    font-family: 'Neue Kabel', sans-serif;
+    font-size: 18px;
+}
+
+.lien {
+    font-weight: 800;
+    color: #E15139;
+}
