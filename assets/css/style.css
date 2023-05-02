@@ -113,6 +113,20 @@ img {
     margin-top: 34px;
 }
 
+/*===== Cursor tracker =====*/
+.cursor {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 6px;
+    margin-left: 6px;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+    z-index: -1;
+}
+/*===== FIN Cursor tracker =====*/
 
 /*=====Works=====*/
 
@@ -172,61 +186,6 @@ div .Titre-works a{
     z-index: 1;
 }
 /*=====Fin Works=====*/
-
-
-/*============= STAGES ===============*/
-
-/*------- MISMO -------*/
-
-.mismo_title{
-    color: #30509f;
-}
-
-.mismo_next{
-    color: #78C19C;
-}
-
-.mismo_intune{
-    color: #E15139;
-    margin-top: 50px;
-    font-size: 40px;
-    margin-bottom: 10px;
-    font-family: 'Neue Kabel', sans-serif;
-    font-weight: bold;
-}
-
-.img_mismo1{
-    margin-bottom: 100px;
-}
-
-.titreprojets {
-    margin-top: 50px;
-    color: #FFF4E5;
-    font-size: 40px;
-    margin-bottom: 10px;
-    font-family: 'Neue Kabel', sans-serif;
-    font-weight: bold;
-
-}
-
-.articleprojets {
-    display: block;
-    margin-left: 60px;
-    color: #FFF4E5;
-    max-width: 100%;
-    font-size: 20px;
-}
-
-.articleprojets,
-.titreprojets {
-    padding-right: 100px;
-    position: sticky;
-}
-
-.projet {
-    grid-column: 2 / 4;
-    margin-right: 60px;
-}
 
 /*about*/
 

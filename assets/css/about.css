@@ -75,3 +75,21 @@ nav a:hover {
 }
 
         /* FIN NAVIGATION */
+
+        /*===== Cursor tracker =====*/
+.cursor {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 6px;
+    margin-left: 6px;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+    z-index: -1;
+
+}
+/*===== FIN Cursor tracker =====*/
+
+

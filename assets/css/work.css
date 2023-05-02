@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap');
 *{
     text-decoration: none;
 }
@@ -8,6 +9,7 @@
     --title-color: #78C19C;
     --title-color-hover: #B9DCC4;
     --title-color-white: #FFF4E5;
+    --text-color: #fff;
     --hightlight: #E15139;
 
         /* FIN VAR COLORS*/
@@ -51,7 +53,7 @@ h1 {
             
 }
 
-.img, .a-logo {
+.a-logo {
     width: 330px;
     max-width: 100%;
     position: absolute;
@@ -83,9 +85,78 @@ nav a:hover {
 }
 
         /* FIN NAVIGATION */
+        
+/*===== Cursor tracker =====*/
+.cursor {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 6px;
+    margin-left: 6px;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+    z-index: -1;
+
+}
+/*===== FIN Cursor tracker =====*/
+
+/* =========== Projets ============ */
+
+.container {
+    margin-top: 80px;
+    display: grid;
+    grid-template-areas: "left" "right";
+    grid-template-columns: 60% 1fr;
+}
+
+.separation {
+    font-size: 100px;
+    padding: 0%;
+    margin: 0%;
+    color: #78C19C;
+    text-align: center;
+}
+/* -------- PARTIEL 1 -------- */
+
 
 
 /* =========== Stage ============ */
 
+
 /* -------- MISMO -------- */
+
+
+.img-mismo {
+    margin-top: 34px;
+    margin-left: 40px;
+    border-radius: 25px;
+    height: auto;
+    width: 400px;
+}
+
+.left {
+    color: var(--text-color);
+    font-family: 'Neue Kabel', sans-serif;
+    margin-left: 40px;
+    margin-right: 80px;
+    font-size: large;
+}
+
+.title-mismo {
+    color: var(--title-color-white);
+    text-align: center;
+}
+
+.gras-mismo {
+    color: #9e7bd6;
+}
+
+/* -------- Esprit -------- */
+
+.title-esprit {
+    color: var(--title-color-white);
+    text-align: center;
+}
 
