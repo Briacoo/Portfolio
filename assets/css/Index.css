@@ -1,10 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
 *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
     text-decoration: none;
 }
 
 :root{
+
 /*==========VAR COLORS==========*/
-    --background-color: #030316;
+    --background-color: #03010e;
     --title-color: #78C19C;
     --title-color-hover: #B9DCC4;
     --title-color-white: #FFF4E5;
@@ -21,11 +28,12 @@ html {
 body {
     font-family: 'Neue Kabel', sans-serif;
     margin: 10px;
-    background-color: var(--background-color);
-    background-image: url(../img/grille2.png);
+    background: var(--background-color);
+    /*background-image: url(../img/grille2.png);*/
     background-repeat:repeat;
     background-size: 130%;
 }
+
 
 /*========== NAVIGATION ==========*/
 
@@ -43,7 +51,7 @@ h1 {
             
 }
 
-.img, .a-logo {
+.a-logo {
     width: 330px;
     max-width: 100%;
     position: absolute;
@@ -75,3 +83,96 @@ nav a:hover {
 }
 
         /* FIN NAVIGATION */
+.bloc1 {
+  margin-top: 200px;
+  z-index: -1;
+}
+
+
+
+
+        /*===== Cursor tracker =====*/
+.cursor {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 6px;
+    margin-left: 6px;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+    z-index: -1;
+}
+/*===== FIN Cursor tracker =====*/
+
+
+/*===== Text animation =====*/
+
+.wrapper{
+    display: flex;
+}
+  .wrapper .static-txt{
+    color: #fff;
+    font-size: 60px;
+    font-weight: 400;
+  }
+  .wrapper .dynamic-txts{
+    margin-left: 15px;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+  }
+  .dynamic-txts li{
+    list-style: none;
+    color: #FC6D6D;
+    font-size: 60px;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    animation: slide 12s steps(4) infinite;
+  }
+  @keyframes slide {
+    100%{
+      top: -360px;
+    }
+  }
+  .dynamic-txts li span{
+    position: relative;
+    margin: 5px 0;
+    line-height: 90px;
+  }
+  .dynamic-txts li span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: var(--background-color);
+    border-left: 2px solid #FC6D6D;
+    animation: typing 3s steps(10) infinite;
+  }
+  @keyframes typing {
+    40%, 60%{
+      left: calc(100% + 30px);
+    }
+    100%{
+      left: 0;
+    }
+  }
+
+/*===== FIN Text animation =====*/
+
+/*===== sphere animation =====*/
+.tagcloud {
+    font-family: 'Poppins';  
+    font-size: 20px;
+    width: 50%;
+    margin-left: 60%;
+   bottom: 250px;
+  }
+.tagcloud--item:hover {
+    color: var(--title-color);
+}
+
+/*===== FIN sphere animation =====*/
