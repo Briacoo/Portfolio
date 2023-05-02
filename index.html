@@ -12,20 +12,20 @@
     <link rel="shortcut icon" type="image/png" href="#" />
 
     <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/Index.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 
 </head>
 
 <body class="home">
-
-    <main class="grid">
+    <div class="cursor"></div>
+    <main>
 
         <header class="header">
 
             <h1 class="header-title">
                 <a href="index.html">
-                    <img class="a-logo" src="assets/img/Briaclogo.png" alt="logo" id="logo">
+                    <img class="a-logo" src="assets/img/Briaclogo.svg" alt="logo" id="logo">
                 </a>
             </h1>
 
@@ -36,19 +36,29 @@
                 <a href="Works.html">Works</a>     
             </nav>
         </header>
-
-        <section class="works">
-            <h1>OKKKKKKKKKKK</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum tempore minus repudiandae numquam aliquam, molestiae ab exercitationem tenetur doloribus obcaecati tempora porro et magnam, odio unde dolor autem modi quas?</p>
-        </section>
-        <section class="works">
-            <h1>OKKKKKKKKKKK</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum tempore minus repudiandae numquam aliquam, molestiae ab exercitationem tenetur doloribus obcaecati tempora porro et magnam, odio unde dolor autem modi quas?</p>
-        </section>
-
     </main>
-
-
+    <div class="bloc">
+        <div class="bloc1">
+            <div class="wrapper">
+                <div class="static-txt">Je suis un</div>
+                    <ul class="dynamic-txts">
+                        <li><span>Développeur</span></li>
+                        <li><span>Designer</span></li>
+                        <li><span>Développeur</span></li>
+                        <li><span>Designer</span></li>
+                    </ul>
+                </div>
+            </div>    
+        </div>
+        <div class="bloc2">
+            <span class="content"></span>
+        </div>
+     <!-- Sphere -->
+    </div>
+    <!-- js -->
+    <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"> </script>
+    <script src="./assets/js/cursor.js"></script>
+    <script src="./assets/js/sphere.js"></script>
 </body>
 
 </html>
